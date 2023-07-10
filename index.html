@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 class="text-center text-uppercase my-5">Bài tập js 7-8</h1>
+    <div class="container container__border mb-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Nhập số nguyên </label>
+            <input type="text" class="form-control" name="" id="txtSoNguyen" aria-describedby="helpId" placeholder="">
+        </div>
+        <button class="btn btn-dark" id="btnThemSo">Thêm số</button>
+        <div id="hienThiArray" class="bg-dark bg-opacity-75 text-white my-3"></div>
+        <div id="accordion" class="mb-5">
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        <span>1</span> Tổng số dương
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai1">Tính tổng</button>
+                        <div id="kQBai1" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        <span>2</span> Đếm số dương
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai2">Đếm số</button>
+                        <div id="kQBai2" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        <span>3</span> Tìm số nhỏ nhất 
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <button class="btn btn-dark" id="btnBai3">Tìm</button>
+                            <div id="kQBai3" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                        <span>4</span> Tìm số dương nhỏ nhất
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <button class="btn btn-dark" id="btnBai4">Tìm</button>
+                            <div id="kQBai4" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                        <span>5</span> Tìm số chẵn cuối cùng 
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai5">Tìm</button>
+                        <div id="kQBai5" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+                        <span>6</span> Đổi chổ
+                    </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="" id="txtViTri1" aria-describedby="helpId" placeholder="Nhập vị trí thứ nhất">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="" id="txtViTri2" aria-describedby="helpId" placeholder="Nhập vị trí thứ hai">
+                            </div>
+                        </div>
+                        <button class="btn btn-dark" id="btnBai6">Đổi chổ</button>
+                        <div id="kQBai6" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+                        <span>7</span> Sắp xếp tăng dần 
+                    </a>
+                </div>
+                <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai7">Sắp xếp</button>
+                        <div id="kQBai7" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+                        <span>8</span> Tìm số nguyên tố đầu tiên
+                    </a>
+                </div>
+                <div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai8">Tìm kiếm</button>
+                        <div id="kQBai8" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+                        <span>9</span> Điếm số nguyên
+                    </a>
+                </div>
+                <div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="" id="txtNhapSo" aria-describedby="helpId" placeholder="Nhập số">
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-dark" id="btnNhapSo">Nhập số</button>
+                            </div>
+                        </div>
+                        <div id="txtArray" class="my-3"></div>
+                        <button class="btn btn-dark" id="btnBai9">Đếm số nguyên</button>
+                        <div id="kQBai9" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+                        <span>10</span> So sánh số lượng số âm và số dương
+                    </a>
+                </div>
+                <div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <button class="btn btn-dark" id="btnBai10">So sánh</button>
+                        <div id="kQBai10" class="bg-dark bg-opacity-75 text-white my-3"></div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
